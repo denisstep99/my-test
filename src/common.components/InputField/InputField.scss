@@ -1,0 +1,17 @@
+@import '../../common.styles/styles';
+
+.input-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+
+  font-size: $fontSizeMedium;
+
+  border-radius: $mediumRadius;
+  border: none;
+}
+
+.input-field:focus {
+  outline: none;
+  background-color: $lightCyan;
+}

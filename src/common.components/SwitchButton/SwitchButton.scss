@@ -1,0 +1,81 @@
+@import '../../common.styles/styles';
+
+.switch-button {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: $smallRadius;
+  width: 90px;
+  user-select: none;
+  border: 1px solid $darkCyan;
+
+  background-color: white;
+
+  &_disabled {
+    .switch-button__body::before {
+      background-color: #6CA399;
+    }
+  }
+
+  .switch-button__body-part-off {
+    color: white;
+  }
+
+  &_on {
+    .switch-button__body::before {
+      left: 45px;
+    }
+
+    .switch-button__body-part-on {
+      color: white;
+    }
+
+    .switch-button__body-part-off {
+      color: black;
+    }
+  }
+
+  .switch-button__body-part {
+    transition-duration: 0.2s;
+  }
+
+  &__body {
+    cursor: pointer;
+    height: 40px;
+
+    display: flex;
+    position: relative;
+  }
+
+  &__body::before {
+    content: "";
+    border-radius: $smallRadius;
+    display: block;
+    width: 45px;
+    height: 100%;
+
+    transition-duration: 0.2s;
+
+    background-color: $darkCyan;
+
+    z-index: 1;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__body-part {
+    flex-basis: 45px;
+    flex-shrink: 0;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+}

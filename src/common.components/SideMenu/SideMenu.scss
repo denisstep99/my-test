@@ -1,0 +1,10 @@
+@import '../../common.styles/styles';
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+
+  border-radius: $smallRadius;
+  background-color: #345D9B;
+}

@@ -1,0 +1,23 @@
+.navigation-info-block {
+  &__label {
+    font-size: 18px;
+    color: #3C6CB5;
+  }
+
+  &__bread-crumb {
+    padding-right: 4px;
+    color: #868686;
+  }
+
+  &__bread-crumb:not(:last-child)::after {
+    text-decoration:none;
+    display:inline-block;
+    content: '/';
+    margin-left: 4px;
+  }
+
+  &__bread-crumbs {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+}

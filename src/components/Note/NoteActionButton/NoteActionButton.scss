@@ -1,0 +1,26 @@
+@import '../../../common.styles/styles';
+
+.note__action-button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $darkCyan;
+
+  border-radius: $mediumRadius;
+
+  cursor: pointer;
+  transition-duration: $animationNormal;
+
+  // todo Button and NoteActiveButton have the same background-color mixin
+  &:hover {
+    background-color: $darkerCyan;
+  }
+
+  &:active {
+    background-color: $darkDarkerCyan;
+  }
+}

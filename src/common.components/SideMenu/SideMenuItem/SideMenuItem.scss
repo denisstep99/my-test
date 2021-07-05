@@ -1,0 +1,15 @@
+.side-menu__item {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: white;
+
+  &:hover {
+    background-color: #104779;
+  }
+}
+
+.side-menu__item_selected {
+  background-color: #104779;
+  box-shadow: 2px 0 0 0 inset #ffffff;
+}

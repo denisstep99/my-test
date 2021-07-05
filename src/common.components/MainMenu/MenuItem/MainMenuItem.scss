@@ -1,0 +1,19 @@
+.main-menu-item {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  padding: 0 20px;
+  cursor: pointer;
+
+  color: white;
+
+  &:hover {
+    background-color: #3C6CB5;
+  }
+
+  &_selected {
+    background-color: #104779;
+  }
+}

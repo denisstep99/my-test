@@ -1,0 +1,40 @@
+@import '../../../common.styles/styles';
+
+.note__pagination {
+  overflow: hidden;
+  height: 100%;
+  width: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: $mediumRadius;
+
+
+  &-button {
+    background-color: $darkCyan;
+
+    cursor: pointer;
+    transition-duration: $animationNormal;
+
+    flex-grow: 1;
+
+    // todo Button and NoteActiveButton have the same background-color mixin
+    &:hover {
+      background-color: $darkerCyan;
+    }
+
+    &:active {
+      background-color: $darkDarkerCyan;
+    }
+
+
+    &_direction_top {
+      border-bottom: 1px solid $cyan;
+    }
+  }
+
+  &-icon_direction_bottom {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../common.styles/styles';
+
+.button {
+  padding: 16px 28px;
+
+  font-size: $fontSizeMedium;
+  color: $white;
+
+  background-color: $darkCyan;
+  border-radius: $mediumRadius;
+  cursor: pointer;
+  transition-duration: $animationNormal;
+
+  // todo Button and NoteActiveButton have the same background-color mixin
+  &:hover {
+    background-color: $darkerCyan;
+  }
+
+  &:active {
+    background-color: $darkDarkerCyan;
+  }
+}

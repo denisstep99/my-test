@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwitchButton component. Should render correctly 1`] = `
+<span
+  className="switch-button switch-button_on"
+>
+  <label
+    className="switch-button__body"
+    htmlFor="my_label"
+  >
+    <div
+      className="switch-button__body-part switch-button__body-part-off"
+    />
+    <div
+      className="switch-button__body-part switch-button__body-part-on"
+    />
+  </label>
+  <input
+    checked={true}
+    className="switch-button__checkbox"
+    id="my_label"
+    onChange={[Function]}
+    type="checkbox"
+  />
+</span>
+`;

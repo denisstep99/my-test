@@ -1,0 +1,60 @@
+@import '../../common.styles/styles';
+
+.note {
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+
+  background-color: $cyan;
+
+  border-radius: $mediumRadius;
+
+  &__index {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: $fontSizeLarge;
+    color: $darkCyan;
+  }
+
+  &__delimiter {
+    width: 6px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: $cyan;
+  }
+
+  &__title {
+    font-weight: bold;
+    padding: 0 8px 0 16px;
+  }
+
+  &__description {
+    padding-left: 8px;
+  }
+
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+    background-color: $white;
+
+    border-radius: $mediumRadius;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+    margin-left: auto;
+  }
+
+  &__action-button_margin_right {
+    margin-right: 12px;
+  }
+}

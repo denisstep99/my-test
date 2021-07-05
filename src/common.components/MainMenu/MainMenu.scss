@@ -1,0 +1,43 @@
+@import './../../common.styles/styles';
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  border-radius: $smallRadius;
+  overflow: hidden;
+
+  color: white;
+  background-color: #345D9B;
+
+  &__user-block {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+}
+
+.main-menu__navigation {
+  display: flex;
+
+  height: 64px;
+}
+
+.main-menu__logout-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: #ced0e0;
+  }
+}
+
+.main-menu__user-info {
+  margin-right: 12px;
+
+  &::after {
+    content: '|';
+    margin-left: 12px;
+  }
+}
+
